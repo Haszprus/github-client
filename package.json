@@ -8,7 +8,8 @@
   },
   "author": "Haszprus",
   "license": "ISC",
-  "devDependencies": {
-    "bower": "^1.7.9"
+  "dependencies": {
+    "angular": "^1.5.5",
+    "bootstrap": "^3.3.6"
   }
 }
