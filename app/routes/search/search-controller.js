@@ -1,4 +1,4 @@
-angular.module("github-client").controller("SearchController", function (GithubService) {
+angular.module("GithubClient").controller("SearchController", function (GithubService) {
 
     var vm = this;
 

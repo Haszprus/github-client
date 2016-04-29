@@ -1,0 +1,26 @@
+<form>
+    <label for="search">Search GitHub repositories:</label>
+    <input id="search" type="search" ng-model="vm.search" ng-change="vm.doSearch()" ng-model-options="{ debounce: 500 }">
+</form>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>URL</th>
+        <th>Description</th>
+        <th>Forks count</th>
+        <th>Stargazers count</th>
+        <th>Open issues count</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr ng-repeat="item in vm.searchResults.items">
+        <td>{{ item.clone_url }}</td>
+        <td>{{ item.description }}</td>
+        <td>{{ item.forks_count }}</td>
+        <td>{{ item.stargazers_count }}</td>
+        <td>{{ item.open_issues_count }}</td>
+    </tr>
+    </tbody>
+</table>
